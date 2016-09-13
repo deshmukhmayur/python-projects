@@ -68,6 +68,8 @@ def main(startFrom=''):
         print ('Terminating Download.')
     finally:
         print ('Done.')
+        if imageFile:
+            imageFile.close()
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
